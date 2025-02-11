@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebuild - Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Left Section: Resume Builder -->
+    <div class="left-section">
+      <h2>Resume Builder</h2>
+
+      <div class="section">
+        <label for="summary">Professional Summary</label>
+        <textarea id="summary" rows="6" placeholder="Enter 80-120 words about your professional summary"></textarea>
+      </div>
+
+      <div class="section">
+        <h3>Work Experience</h3>
+        <div class="work-experience">
+          <div class="work-item">
+            <input type="text" id="company-1" placeholder="Company Name">
+            <input type="text" id="location-1" placeholder="Location">
+            <input type="text" id="duration-1" placeholder="Duration">
+            <input type="text" id="designation-1" placeholder="Designation">
+            <textarea id="description-1" rows="6" placeholder="Enter description of your role (max 300 words)"></textarea>
+          </div>
+          <!-- Add additional work experience entries dynamically with JavaScript -->
+        </div>
+      </div>
+
+      <div class="section">
+        <label for="education">Education</label>
+        <textarea id="education" rows="4" placeholder="Enter details about your education (max 50 words)"></textarea>
+      </div>
+
+      <div class="section">
+        <label for="certifications">Certifications</label>
+        <textarea id="certifications" rows="6" placeholder="Enter details of certifications (max 150 words)"></textarea>
+      </div>
+
+      <div class="section">
+        <label for="skills">Skills</label>
+        <textarea id="skills" rows="6" placeholder="Enter your skills (max 150 words)"></textarea>
+      </div>
+
+      <button id="generate-btn">Generate Resume</button>
+    </div>
+
+    <!-- Right Section: Job Description -->
+    <div class="right-section">
+      <h2>Job Description</h2>
+      <textarea id="job-description" rows="20" placeholder="Enter job description here"></textarea>
+    </div>
+  </div>
+
+  <!-- Results Section (hidden initially) -->
+  <div id="results-section" class="results-section" style="display: none;">
+    <h3>Results</h3>
+    <div id="resume1" class="result"></div>
+    <div id="resume2" class="result"></div>
+    <div id="resume3" class="result"></div>
+  </div>
+
+</body>
+</html>
